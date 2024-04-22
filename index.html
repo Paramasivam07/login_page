@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tabs">
+            <p id="rt" class="tabs" onclick="regtab()">Register</p>
+            <p id="lt" class="tabs" onclick="logintab()">Log in</p>
+        </div>
+        <div class="scont">
+            <div id="login" class="com">
+                <h1 class="l1">Login Page</h1>
+                <input type="text" placeholder="Enter Your Email" id="se" required>
+                <input type="password" placeholder="Enter Your password" id="sp" required>
+                <input type="submit" class="sub" value="submit" onclick="login()">
+                <a href="#" class="fp" onclick="forgot()">Forgot Password</a>
+            </div>
+            <div id="register" class="com">
+                <h1 class="r1">Register Page</h1>
+                <input type="email" placeholder="Enter Your Email" id="re" required>
+                <input type="password" placeholder="Enter New password" id="rp" required>
+                <input type="password" placeholder="Enter Conform password" id="rrp" required>
+                <input type="submit" class="sub" value="submit" onclick="register()">
+            </div>
+            <div id="forgot" class="com">
+                <h1 class="fp1">Forgot Password</h1>
+                <input type="email" placeholder="Enter Your Email" id="fe" required>
+                <input type="submit" class="sub" value="submit" onclick="forgotpass()">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
